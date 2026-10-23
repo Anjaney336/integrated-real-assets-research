@@ -29,7 +29,7 @@ The same historical sample has already been inspected; this is retrospective ana
 
 All generated inputs are assumptions, not empirical observations. Historical experiments are retrospective research, not a live track record. No employer sponsorship or investment recommendation is implied. Code was developed with AI assistance; the candidate must be able to reproduce, explain and modify it in interviews.
 
-Source names, URLs and access dates are recorded in results JSON and the inherited methodology. Raw vendor price data are not redistributed. Use a lawfully obtained local CSV to reproduce historical runs; the default run is fully offline and synthetic.
+Source names, URLs and access dates are recorded in results JSON and the inherited methodology. Raw vendor price data are not redistributed. Use a lawfully obtained local CSV to reproduce historical runs; the default reproduction is fully offline; synthetic experiments and cached derived historical outputs are identified separately.
 
 ## Reproduce and test
 
