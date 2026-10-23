@@ -29,3 +29,7 @@ Consolidates existing research modules; original repositories remain as history.
 ## Wealth-policy extension
 
 [Read the fictional household IPS and goal-funding review](WEALTH_POLICY.md). Three assumed allocations, 2,000 shared paths, fees, rebalancing, inflation and shock-timing stress. Six new tests. This is a synthetic planning case, not a client recommendation.
+
+## SQL and statistical research workflow
+
+[SQL, statsmodels/SciPy, stochastic processes, hypothesis tests and Git lineage](QUANT_METHODS.md). Run `python quant_data_audit.py` for a synthetic SQL-to-backtest parity audit; see the dedicated GitHub Actions workflow for commit-linked outputs.

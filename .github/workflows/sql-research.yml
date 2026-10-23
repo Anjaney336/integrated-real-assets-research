@@ -1,0 +1,17 @@
+name: SQL and statistical research audit
+on: [push, pull_request]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m unittest test_quant_data_audit -v
+      - run: python quant_data_audit.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sql-statistical-audit
+          path: results/sql_audit/

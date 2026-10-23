@@ -1,0 +1,77 @@
+{
+  "source": {
+    "name": "Synthetic fixture: common random walk plus AR(1) residual and independent random walk",
+    "url": "https://github.com/Anjaney336/integrated-real-assets-research/blob/main/signals/src/data_loader.py",
+    "access_date": "2026-10-24",
+    "seed": 336,
+    "observations": 1008,
+    "assets": 3,
+    "ar1_phi_assumed": 0.88
+  },
+  "sql": {
+    "rows": 3024,
+    "primary_key": [
+      "date",
+      "symbol"
+    ],
+    "missing_policy": "no interpolation/backfill; missing rows omitted and remain missing on pivot",
+    "as_of": "2025-11-12",
+    "ledger_max_absolute_difference": 0.0
+  },
+  "diagnostics": {
+    "training_start": "2022-01-03",
+    "training_end": "2022-12-20",
+    "training_rows": 252,
+    "log_level_ols": {
+      "intercept": 0.27433459964920015,
+      "beta": 0.9487705971594331
+    },
+    "cointegration": {
+      "alpha": 0.27433459964921003,
+      "beta": 0.948770597159434,
+      "eg_p": 0.042553225272725474,
+      "johansen_trace": 13.976232570461194,
+      "johansen_95": 15.4943,
+      "adf_y_p": 0.637750592900666,
+      "adf_x_p": 0.8278803076129225,
+      "half_life": 6.627128261097329,
+      "residual_std": 0.016192868119112868
+    },
+    "returns_hac": {
+      "beta": 1.0258914271226625,
+      "standard_error": 0.04861397572444344,
+      "pvalue": 7.494933958094119e-99,
+      "maxlags": 5,
+      "interpretation": "contemporaneous descriptive regression; not forecast performance"
+    },
+    "adf_first_differences": {
+      "x_p": 1.282679451268418e-18,
+      "y_p": 6.969073991701741e-18
+    },
+    "residual_ljung_box_p": 5.493263518433452e-193,
+    "residual_arch_lm_p": 2.585595203112205e-28,
+    "scipy_normaltest_residual_p": 0.04278831901434286,
+    "pearson_return_correlation": 0.7842928798783961
+  },
+  "backtest": {
+    "net_total_return": 0.006975643445045421,
+    "evaluation_rows": 756,
+    "assumed_shorts": true,
+    "note": "Synthetic known-structure fixture; not empirical alpha. All fees/borrow use existing Config assumptions."
+  },
+  "lineage": {
+    "git_commit": null,
+    "github_run_id": null,
+    "context": "CI commit when available; local runs leave Git identity null rather than borrowing an unrelated parent repository SHA",
+    "input_sha256": "bb47b7297bc8bfdb1eef9e426fad36857a3dd86a396e8380c23b34d7de279deb",
+    "code_sha256": {
+      "quant_data_audit.py": "25e294618af2fd6f05e52219270e1aa8ff0928babc54526e870e36da50c4ea88",
+      "signals/src/data_loader.py": "6f066d276bd3641aea1c301f285e564ed86555e3fad3398b063cea9c218a7da0",
+      "signals/src/signals.py": "827164ea017e03038e237c54d6664a85c0537bd5674415eeb65daf8590b516e2",
+      "signals/src/backtest.py": "0c93db7cc6f82b43ea8f72db9f349711b6c865a2c924069bfb9ff9a02bac2d16"
+    },
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "limitations": "Diagnostic p-values are reported, not tuned into new entry rules. Ljung-Box null is no serial correlation; ARCH null is no conditional heteroskedasticity. Normality is not required for all model uses. Holm in the existing selector controls the pair family per training window, not all researcher choices or repeated windows. SQL as-of is observation-date filtering, not a historical-vintage database."
+}
