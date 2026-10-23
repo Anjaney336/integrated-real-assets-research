@@ -1,0 +1,29 @@
+{
+  "provider": "Yahoo via yfinance",
+  "retrieved_utc": "2026-10-21T18:59:26.802763+00:00",
+  "start": "2019-01-01",
+  "end_exclusive": "2026-10-22",
+  "requested": [
+    "EMBASSY.NS",
+    "MINDSPACE.NS",
+    "BIRET.NS",
+    "NXST.NS",
+    "DLF.NS",
+    "GODREJPROP.NS",
+    "PRESTIGE.NS",
+    "OBEROIRLTY.NS",
+    "LODHA.NS",
+    "PHOENIXLTD.NS",
+    "BRIGADE.NS",
+    "SOBHA.NS",
+    "^CNXREALTY"
+  ],
+  "errors": {},
+  "source_manifests": [
+    "2c08538c5e42662e_manifest.json",
+    "d8d85547d651dc7b_manifest.json"
+  ],
+  "symbol_note": "Legacy -RR series returned one row; current symbols verified through Yahoo history responses.",
+  "price_sha256": "1298ee925e4e8547aec0745f4dbe4f1b961918f1ff47f81d691f28cf18e64ea4",
+  "value_sha256": "d0f452d81f0ad55904c126d24d9916f8fe07cffe1ead2eec4e5f5cca9b9a3518"
+}

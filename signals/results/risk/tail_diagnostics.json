@@ -1,0 +1,29 @@
+{
+  "observations": 1675,
+  "zero_return_days": 1528,
+  "forecast_days": 1423,
+  "breaches": 71,
+  "breach_frequency": 0.049894588896697116,
+  "last_forecast": {
+    "index": 1674,
+    "var": 0.0010518849312137338,
+    "tail_mean": 0.005183574278542034,
+    "loss": -0.0,
+    "breach": 0
+  },
+  "worst_daily_return": -0.03148116701041925,
+  "longest_zero_run": 257,
+  "source": "Published derived historical strategy ledger; underlying vendor-adjusted Yahoo Finance data",
+  "source_url": "https://github.com/Anjaney336/india-realestate-quant-backtest/blob/main/results/historical/ledger.csv",
+  "underlying_source": "https://finance.yahoo.com/",
+  "access_date": "2026-10-24",
+  "ledger_sha256": "c9791ab4bb2db038f3f7180ac63df58206e7bbb48f0983b251338dc715bff9ba",
+  "settings": {
+    "trailing_observations": 252,
+    "confidence": 0.95,
+    "quantile": "linear interpolation",
+    "tail_mean": "mean losses >= quantile, ties included",
+    "breach": "realized loss strictly greater than forecast VaR"
+  },
+  "interpretation": "Strategy-return risk only, not a REIT valuation or a capital-charge model. Zero-return periods can collapse the trailing distribution; retain these days and report clustering. Tail mean with ties is a diagnostic, not exact fixed-mass Expected Shortfall. No calibration pass/fail or forward predictive validity is claimed."
+}

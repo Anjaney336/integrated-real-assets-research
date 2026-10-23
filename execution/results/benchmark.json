@@ -1,0 +1,23 @@
+{
+  "dataset": "Synthetic IID order events; not exchange or employer data",
+  "generator": "run.py",
+  "seed": 20261024,
+  "generated_on": "2026-10-24",
+  "events": 10000,
+  "input_sha256": "50b8dd3f62fda5d97d8ee8010517f82bfed4406ede2040515b7f3d855564120e",
+  "output_sha256": "417289f3039ddb0026e86c668d113e178e13a354965426774972638d4340a9b6",
+  "timing_ms_all_runs": [
+    41.9691,
+    44.5172,
+    46.9626,
+    41.7661,
+    42.024
+  ],
+  "median_ms": 42.024,
+  "events_per_second_local": 237959.2613744527,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "replay_events_verified": 250,
+  "limitations": "Single process local Python timing, no networking, persistence or serialization included in timed loop; not exchange latency or production throughput."
+}

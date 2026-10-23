@@ -1,0 +1,134 @@
+{
+  "label": "SYNTHETIC VALIDATION \u2014 NOT INDIAN MARKET PERFORMANCE",
+  "mode": "demo",
+  "period_start": "2022-12-21",
+  "period_end": "2025-11-12",
+  "config": {
+    "train": 252,
+    "test": 63,
+    "entry_z": 2.0,
+    "exit_z": 0.25,
+    "stop_z": 4.0,
+    "max_gross": 0.8,
+    "max_leg": 0.5,
+    "initial_nav": 1000000.0,
+    "participation": 0.01,
+    "brokerage_bps": 3.0,
+    "slippage_bps": 10.0,
+    "other_fees_bps": 2.0,
+    "stt_buy_bps": 10.0,
+    "stt_sell_bps": 10.0,
+    "borrow_annual": 0.06,
+    "hypothetical_shorts": true
+  },
+  "rates_enabled": true,
+  "yield_spread_enabled": true,
+  "metrics": {
+    "observations": 756,
+    "total_return": 0.005188724062229477,
+    "cagr": 0.0017265918522599843,
+    "sharpe": 0.49122528081020805,
+    "sortino": 1.0459344674454583,
+    "max_drawdown": 0.003495814081645121,
+    "calmar": 0.4939026538412062,
+    "volatility": 0.003524457397906151
+  },
+  "bootstrap": {
+    "cagr": [
+      -0.001127311995366198,
+      0.0016389730811626757,
+      0.005907657159721507
+    ],
+    "sharpe": [
+      -0.733526582617192,
+      0.5200730456233839,
+      1.095547633539784
+    ],
+    "max_drawdown": [
+      0.0004567912045678718,
+      0.002531555669248009,
+      0.005351564677918764
+    ]
+  },
+  "dsr": {
+    "probability": null,
+    "reason": "Need variable returns and >=2 trials with defined Sharpe; never replace an undefined trial with zero"
+  },
+  "trial_registry": [
+    {
+      "entry_z": 1.5,
+      "observations": 756,
+      "total_return": -0.0056461808581192985,
+      "cagr": -0.0018856135898593918,
+      "sharpe": -0.2194536083595706,
+      "sortino": -0.3010320753007063,
+      "max_drawdown": 0.014583422731234807,
+      "calmar": -0.1292984249726767,
+      "volatility": 0.008438344994960897
+    },
+    {
+      "entry_z": 2.0,
+      "observations": 756,
+      "total_return": 0.005188724062229477,
+      "cagr": 0.0017265918522599843,
+      "sharpe": 0.49122528081020805,
+      "sortino": 1.0459344674454583,
+      "max_drawdown": 0.003495814081645121,
+      "calmar": 0.4939026538412062,
+      "volatility": 0.003524457397906151
+    },
+    {
+      "entry_z": 2.5,
+      "observations": 756,
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "sharpe": null,
+      "sortino": null,
+      "max_drawdown": -0.0,
+      "calmar": null,
+      "volatility": 0.0
+    }
+  ],
+  "transaction_cost": 7874.959781437423,
+  "borrow_cost": 612.4054620476212,
+  "turnover": 3149983.912574969,
+  "final_gross_exposure": 0.0,
+  "selected_folds": 6,
+  "input_sha256": "bb47b7297bc8bfdb1eef9e426fad36857a3dd86a396e8380c23b34d7de279deb",
+  "cost_sensitivity": [
+    {
+      "slippage_bps": 5.0,
+      "observations": 756,
+      "total_return": 0.006771465494812112,
+      "cagr": 0.0022520794954712375,
+      "sharpe": 0.6515165727190052,
+      "sortino": 1.5890996079198905,
+      "max_drawdown": 0.0029377250700928226,
+      "calmar": 0.7666066230629537,
+      "volatility": 0.0034619721717086024
+    },
+    {
+      "slippage_bps": 10.0,
+      "observations": 756,
+      "total_return": 0.005188724062229477,
+      "cagr": 0.0017265918522599843,
+      "sharpe": 0.49122528081020805,
+      "sortino": 1.0459344674454583,
+      "max_drawdown": 0.003495814081645121,
+      "calmar": 0.4939026538412062,
+      "volatility": 0.003524457397906151
+    },
+    {
+      "slippage_bps": 25.0,
+      "observations": 756,
+      "total_return": 0.00045091775811556545,
+      "cagr": 0.00015028333316013942,
+      "sharpe": 0.040492173930490684,
+      "sortino": 0.0633232271975452,
+      "max_drawdown": 0.005450239723816974,
+      "calmar": 0.0275737106577931,
+      "volatility": 0.0038984311898293653
+    }
+  ],
+  "trial_count_including_cost_stress": 5
+}

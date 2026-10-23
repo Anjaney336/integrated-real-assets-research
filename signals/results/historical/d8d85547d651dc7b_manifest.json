@@ -1,0 +1,15 @@
+{
+  "provider": "Yahoo via yfinance",
+  "retrieved_utc": "2026-10-21T19:00:56.965554+00:00",
+  "start": "2019-01-01",
+  "end_exclusive": "2026-10-22",
+  "requested": [
+    "EMBASSY.NS",
+    "MINDSPACE.NS",
+    "BIRET.NS",
+    "NXST.NS"
+  ],
+  "errors": {},
+  "price_sha256": "657016440ee9fda953f30965545e132a2aa611ab609d9d36e70a07e64ae633b9",
+  "value_sha256": "a65e20e566eda62f2fcd485437f944f71562c029ad66cfef6b248a36c699f6ce"
+}

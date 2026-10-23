@@ -1,0 +1,1 @@
+Prepared 2026-10-24. AI-assisted research portfolio by Anjaney Malhotra. Sources and assumed inputs are documented in README and results metadata. Original repositories remain available and unchanged by this release.

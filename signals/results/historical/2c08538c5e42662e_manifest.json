@@ -1,0 +1,24 @@
+{
+  "provider": "Yahoo via yfinance",
+  "retrieved_utc": "2026-10-21T18:59:26.802763+00:00",
+  "start": "2019-01-01",
+  "end_exclusive": "2026-10-22",
+  "requested": [
+    "EMBASSY-RR.NS",
+    "MINDSPACE-RR.NS",
+    "BIRET-RR.NS",
+    "NXST-RR.NS",
+    "DLF.NS",
+    "GODREJPROP.NS",
+    "PRESTIGE.NS",
+    "OBEROIRLTY.NS",
+    "LODHA.NS",
+    "PHOENIXLTD.NS",
+    "BRIGADE.NS",
+    "SOBHA.NS",
+    "^CNXREALTY"
+  ],
+  "errors": {},
+  "price_sha256": "5e4187b9bf9d0eb08421d24d502238f59ed69462cc36497cef3817b70ca81e99",
+  "value_sha256": "fa546def5cc6ebd30453e8f0b91f41d1e7091235facb47dc96cce6bfe858fb96"
+}
