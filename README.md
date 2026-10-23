@@ -25,3 +25,7 @@ The dated Embassy case is not a current valuation. It is not joined into old sig
 
 ## Lineage and authorship
 Consolidates existing research modules; original repositories remain as history. This is AI-assisted portfolio research, not code represented as deployed at a financial institution.
+
+## Wealth-policy extension
+
+[Read the fictional household IPS and goal-funding review](WEALTH_POLICY.md). Three assumed allocations, 2,000 shared paths, fees, rebalancing, inflation and shock-timing stress. Six new tests. This is a synthetic planning case, not a client recommendation.
